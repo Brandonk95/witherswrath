@@ -25,6 +25,8 @@ scoreboard objectives remove wither.temp.px
 scoreboard objectives remove wither.temp.py
 scoreboard objectives remove wither.temp.pz
 scoreboard objectives remove wither.healCap
+scoreboard objectives remove wither.noHit
+scoreboard objectives remove wither.blast
 
 scoreboard objectives remove rules
 scoreboard objectives remove stages
@@ -119,6 +121,9 @@ schedule clear wither:wither/skull
 schedule clear wither:wither_check
 schedule clear wither:5tick
 schedule clear wither:xp/xp
+schedule clear wither:wither/lifecycle/death_blast/start
+schedule clear wither:wither/lifecycle/death_blast/tick
+schedule clear wither:wither/lifecycle/death_blast/end
 schedule clear wither:xp/xp1
 schedule clear wither:xp/xp2
 schedule clear wither:xp/xp3
@@ -142,6 +147,8 @@ kill @e[type=wither]
 kill @e[type=wither_skull]
 kill @e[type=item_display,tag=nether_star]
 kill @e[tag=wSkel]
+kill @e[type=marker,tag=death_blast]
+kill @e[type=marker,tag=death_blast_star]
 kill @e[tag=wArcher]
 kill @e[type=armor_stand,tag=hStand]
 kill @e[type=armor_stand,tag=starxp]

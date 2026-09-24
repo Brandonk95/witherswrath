@@ -1,1 +1,0 @@
-execute as @s run function wither:dialog/main

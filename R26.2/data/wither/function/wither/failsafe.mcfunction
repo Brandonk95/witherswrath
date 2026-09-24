@@ -7,7 +7,6 @@ execute unless entity @e[type=wither] run schedule clear wither:wither/phase2/ch
 execute unless entity @e[type=wither] run schedule clear wither:wither/phase2/charge/charge2
 execute unless entity @e[type=wither] run schedule clear wither:wither/phase2/charge/chargepre
 execute unless entity @e[type=wither] run schedule clear wither:wither/phase2/charge/chargetick
-execute unless entity @e[type=wither] run schedule clear wither:wither/phase2/charge/chargereset
 
 # Phase 1 Homing loops
 execute unless entity @e[type=wither] run schedule clear wither:wither/phase1/homing/homing

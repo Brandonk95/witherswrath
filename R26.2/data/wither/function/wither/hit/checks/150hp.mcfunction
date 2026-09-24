@@ -16,7 +16,7 @@ particle angry_villager ~ ~ ~ 3 3 3 1 100
 # Trigger hit functions
 # From hit3
 scoreboard players set wCharge wcharge1 2
-execute if data storage wither:options {togglecharge:Enabled} run function wither:wither/phase2/charge/chargepre
+tag @s remove Charge
 
 # From hit4
 execute if data storage wither:options {toggleanimation:Default} run function wither:wither/phase2/enraged/enraged

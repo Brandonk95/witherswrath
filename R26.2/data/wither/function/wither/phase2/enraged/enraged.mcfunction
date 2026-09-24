@@ -7,7 +7,11 @@ execute as @e[type=wither,limit=1] at @s run data merge entity @s {attributes:[{
 team modify Wither color dark_red
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # No healing from here on unless it goes heal_delay seconds without being hit (enforced by no_heal in tick)
+=======
+# No healing from here on (enforced by no_heal in tick)
+>>>>>>> parent of 9ca5b30 (explode)
 =======
 # No healing from here on (enforced by no_heal in tick)
 >>>>>>> parent of 9ca5b30 (explode)

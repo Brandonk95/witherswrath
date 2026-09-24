@@ -25,9 +25,12 @@ execute as @e[type=wither,tag=!Wither,tag=!HighDPS] if score @s Health matches 2
 execute as @e[type=wither,tag=!Dash,tag=!HighDPS] if score @s Health matches 100.. run data modify entity @s Health set value 98.0f
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ENRAGED WITHER CAN'T HEAL (UNLESS NOT HIT FOR 5S)
 execute if score enraged wenraged matches 1 if data storage wither:options {enraged_noheal:1b} as @e[type=wither,tag=theWither] run function wither:wither/phase2/enraged/no_heal
 =======
+=======
+>>>>>>> parent of 9ca5b30 (explode)
 # ENRAGED WITHER CAN'T HEAL
 execute if score enraged wenraged matches 1 as @e[type=wither,tag=theWither] run function wither:wither/phase2/enraged/no_heal
 >>>>>>> parent of 9ca5b30 (explode)

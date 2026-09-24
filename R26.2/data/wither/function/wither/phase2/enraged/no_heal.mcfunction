@@ -1,8 +1,13 @@
 # Ran every tick as the enraged Wither
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Blocks healing unless the Wither hasn't been hit for heal_delay seconds (Fight Tuning, default 5)
 # wither.healCap = highest Health it's allowed to have (x100 to keep decimals)
 # wither.noHit   = ticks since it last took damage
+=======
+# Blocks all healing: Health can only go down while enraged
+# wither.healCap holds the lowest Health seen since enraging (x100 to keep decimals)
+>>>>>>> parent of 9ca5b30 (explode)
 =======
 # Blocks all healing: Health can only go down while enraged
 # wither.healCap holds the lowest Health seen since enraging (x100 to keep decimals)
@@ -13,6 +18,7 @@ execute store result score #now wither.healCap run data get entity @s Health 100
 execute unless score @s wither.healCap matches 1.. run scoreboard players operation @s wither.healCap = #now wither.healCap
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Took damage -> restart the 5s timer
 execute if score #now wither.healCap < @s wither.healCap run scoreboard players set @s wither.noHit 0
 scoreboard players add @s wither.noHit 1
@@ -20,6 +26,8 @@ scoreboard players add @s wither.noHit 1
 # Not hit for heal_delay -> healing allowed, cap follows Health up
 execute if score @s wither.noHit >= #delay wither.noHit run scoreboard players operation @s wither.healCap = #now wither.healCap
 
+=======
+>>>>>>> parent of 9ca5b30 (explode)
 =======
 >>>>>>> parent of 9ca5b30 (explode)
 # New damage lowers the cap

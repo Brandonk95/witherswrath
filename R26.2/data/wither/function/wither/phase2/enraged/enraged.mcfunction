@@ -6,8 +6,11 @@ execute as @e[type=wither,limit=1] at @s run playsound minecraft:entity.warden.s
 execute as @e[type=wither,limit=1] at @s run data merge entity @s {attributes:[{id:"minecraft:armor",base:10},{id:"minecraft:armor_toughness",base:10}]}
 team modify Wither color dark_red
 
+<<<<<<< HEAD
 # No healing from here on unless it goes heal_delay seconds without being hit (enforced by no_heal in tick)
+=======
+# No healing from here on (enforced by no_heal in tick)
+>>>>>>> parent of 9ca5b30 (explode)
 execute as @e[type=wither,limit=1] store result score @s wither.healCap run data get entity @s Health 100
-execute as @e[type=wither,limit=1] run scoreboard players set @s wither.noHit 0
 
 execute if data storage wither:options {skull_ring:1b} run function wither:wither/phase2/enraged/skulls/skulls

@@ -161,6 +161,7 @@ data remove storage wither:options spawnreq_string
 data remove storage wither:options toggleanimation_string
 data remove storage wither:options initialized
 data remove storage wither:wither_position input
+function wither:config/remove_tuning
 data remove storage temp Head
 
 # Uninstall Wither's Wrath runtime state

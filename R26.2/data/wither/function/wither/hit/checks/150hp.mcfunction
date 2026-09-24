@@ -26,7 +26,8 @@ tag @s remove Dash
 execute if data storage wither:options {toggleanimation:Bedrock} run function wither:wither/bedrock/death/deadbedrock
 
 # From hit6
-execute if data storage wither:options {toggleanimation:Default} run function wither:wither/phase2/swarm
+execute if data storage wither:options {toggleanimation:Default} if data storage wither:options {swarm:1b} run function wither:wither/phase2/swarm
+tag @s remove Swarm
 
 tag @s add HighDPS
 

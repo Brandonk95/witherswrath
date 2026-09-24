@@ -23,3 +23,8 @@ data remove storage wither:options toggleanimation_string
 data remove storage wither:options initialized
 
 data remove storage wither:wither_position input
+function wither:config/remove_tuning
+
+# Re-apply defaults right away so the config menu keeps working
+function wither:initialize_storage
+function wither:config/defaults

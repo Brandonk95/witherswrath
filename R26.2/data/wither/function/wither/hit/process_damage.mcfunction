@@ -1,6 +1,9 @@
 # Store current health
 execute store result score @s wither.currentHealth run data get entity @s Health
 
+# Anti-burst turned off in Fight Tuning: just track health, no punishments
+execute unless data storage wither:options {antiburst:1b} run return run scoreboard players operation @s wither.lastHealth = @s wither.currentHealth
+
 # Initialize LastHealth if not set (avoid huge damage on first hit after reload) or 0
 execute unless score @s wither.lastHealth matches 1.. run scoreboard players operation @s wither.lastHealth = @s wither.currentHealth
 

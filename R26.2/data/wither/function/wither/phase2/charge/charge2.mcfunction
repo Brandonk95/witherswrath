@@ -8,4 +8,4 @@ kill @e[type=armor_stand,tag=midpointpos]
 data merge entity @e[type=minecraft:wither,limit=1,sort=nearest] {Glowing:0b}
 
 
-execute if score wCharge wcharge1 matches 2 run schedule function wither:wither/phase2/charge/chargepre 20s
+execute if score wCharge wcharge1 matches 2 run function wither:wither/phase2/charge/schedule_next with storage wither:options

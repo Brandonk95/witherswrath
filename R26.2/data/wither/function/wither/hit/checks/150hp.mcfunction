@@ -20,7 +20,7 @@ execute if data storage wither:options {togglecharge:Enabled} run function withe
 
 # From hit4
 execute if data storage wither:options {toggleanimation:Default} run function wither:wither/phase2/enraged/enraged
-execute if data storage wither:options {toggledash:Enabled} run function wither:wither/phase2/dashes/dash
+tag @s remove Dash
 
 # From hit5
 execute if data storage wither:options {toggleanimation:Bedrock} run function wither:wither/bedrock/death/deadbedrock

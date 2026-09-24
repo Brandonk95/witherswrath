@@ -24,6 +24,7 @@ scoreboard objectives remove wither.temp.z
 scoreboard objectives remove wither.temp.px
 scoreboard objectives remove wither.temp.py
 scoreboard objectives remove wither.temp.pz
+scoreboard objectives remove wither.healCap
 
 scoreboard objectives remove rules
 scoreboard objectives remove stages
@@ -52,9 +53,6 @@ schedule clear wither:wither/phase2/charge/charge
 schedule clear wither:wither/phase2/charge/charge2
 schedule clear wither:wither/phase2/charge/chargepre
 schedule clear wither:wither/phase2/charge/chargetick
-schedule clear wither:wither/phase2/dashes/dash
-schedule clear wither:wither/phase2/dashes/dashto
-schedule clear wither:wither/phase2/dashes/endloop
 schedule clear wither:wither/phase1/homing/homingpre
 schedule clear wither:wither/phase1/homing/homingtick
 schedule clear wither:wither/phase1/homing/homing5tick
@@ -143,7 +141,6 @@ tp @e[type=wither] ~ -200 ~
 kill @e[type=wither]
 kill @e[type=wither_skull]
 kill @e[type=item_display,tag=nether_star]
-kill @e[tag=wither_dash]
 kill @e[tag=wSkel]
 kill @e[tag=wArcher]
 kill @e[type=armor_stand,tag=hStand]
